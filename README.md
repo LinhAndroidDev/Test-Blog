@@ -19,7 +19,18 @@ Chào mọi người, hôm nay nhân ngày đẹp trời mình sẽ gửi đến
 
 ![create_project_firebase](/css/images/linhnh/create_project_firebase.png "Create Project Firebase")
 
-2. Sau khi tạo tên cho dự án, bạn chấp nhận các điều khoản và tiếp tục đi đến Configure Google Analytics. Ở đây bạn chọn **Default Account For Firebase**
+2. Sau khi tạo tên cho dự án, bạn chấp nhận các điều khoản và tiếp tục đi đến Configure Google Analytics. Ở đây bạn chọn **Default Account For Firebase** và tiếp tục. Kết quả như hình dưới đây.
+
+![home_page](/css/images/linhnh/home_page.png "Home Page")
+
+3. Đến đây bạn đã tạo thành công dự án firebase, tiếp theo chúng ta cần liên kết firebase với dự án Android Kotlin. Ở trang chủ firebase bạn click vào biểu tượng Android thêm ứng dụng Android tới Firebase.
+
+![add_app_to_firebase](/css/images/linhnh/add_app_to_firebase.png "Add App to Firebase")
+
+4. Bạn cần nhập **Package name** của ứng dụng Android của bạn. Package name này phải trùng với package name trong file `build.gradle` của ứng dụng Android tại dòng code như *namespace = "com.example.messageapp"*. Bạn có thể tìm thấy package name trong file `AndroidManifest.xml` hoặc trong file `build.gradle` (Module: app).
+
+5. Tiếp theo bạn cần nhập key SHA-1 của ứng dụng. Để lấy được key này bạn cần chạy lệnh sau:
+   `keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android`
 
 
 **Các thư viện phổ biến**
