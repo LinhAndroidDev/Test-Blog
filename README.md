@@ -33,7 +33,7 @@ Chào mọi người, hôm nay nhân ngày đẹp trời mình sẽ gửi đến
 ```
 keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
 ```
-Sau đó trong terminal bạn tìm đến dòng SHA1: và copy key này vào ô SHA-1 key trong Firebase. Nếu bạn không có key này thì bạn có thể bỏ qua bước này, nhưng nếu bạn muốn sử dụng các dịch vụ như Firebase Authentication hoặc Firebase Dynamic Links thì bạn cần phải cung cấp key SHA-1.
+   Sau đó trong terminal bạn tìm đến dòng SHA1: và copy key này vào ô SHA-1 key trong Firebase. Nếu bạn không có key này thì bạn có thể bỏ qua bước này, nhưng nếu bạn muốn sử dụng các dịch vụ như Firebase Authentication hoặc Firebase Dynamic Links thì bạn cần phải cung cấp key SHA-1.
 
 
 **Các thư viện phổ biến**
