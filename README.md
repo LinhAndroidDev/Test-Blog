@@ -39,28 +39,43 @@ Sau đó trong terminal bạn tìm đến dòng SHA1: và copy key này vào ô 
 
 ![download_google_service_json](/css/images/linhnh/download_google_service_json.png "Download Google Service Json")
 
-**Các thư viện phổ biến**
-Có thể các bạn đã dùng nhiều thư viện nhưng có thể chưa để ý nó nằm trong Jetpack libraries. Dưới đây là một số thư viện mà chúng ta hay dùng.
-- **Navigation** : Xây dựng và lập cấu trúc cho giao diện người dùng trong ứng dụng, xử lý deep-link và di chuyển giữa các màn hình.
-- **Room** : Tạo mới, lưu trữ và quản lý dữ liệu được hỗ trợ bởi SQLite database.
-- **Databinding** : Cái này chắc mọi người quá quen rồi. Thư viện dùng để liên kết các thành phần UI với data trong app bằng định dạng khai báo (hiểu nôm na là bạn sẽ không cần phải dung findViewById nữa).
-- **Hilt** : Mở rộng chức năng Dagger Hilt để sử dụng kĩ thuật Dependency Injection đơn giản hơn (Sử dụng khá đơn giản, mọi người nên thử).
-- **Activity(androidx.activity)**: [Activity](https://developer.android.com/jetpack/androidx/releases/activity?_gl=1*pux1ac*_up*MQ..&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwR0PQaFlH50BXwBvWZwvNhXobfh78kks9Z6tO1uWRERW9ttkIhxZB8aAnsVEALw_wcB&gclsrc=aw.ds)
-- **Appcompat(androidx.appcompat)** : [AppCompat](https://developer.android.com/jetpack/androidx/releases/appcompat?_gl=1*1h95g3h*_up*MQ..&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwR0PQaFlH50BXwBvWZwvNhXobfh78kks9Z6tO1uWRERW9ttkIhxZB8aAnsVEALw_wcB&gclsrc=aw.ds)
-- **AppSearch**: [AppSearch](https://developer.android.com/jetpack/androidx/releases/appsearch?_gl=1*1h95g3h*_up*MQ..&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwR0PQaFlH50BXwBvWZwvNhXobfh78kks9Z6tO1uWRERW9ttkIhxZB8aAnsVEALw_wcB&gclsrc=aw.ds)
-- **Camera**: [Camera](https://developer.android.com/jetpack/androidx/releases/camera?_gl=1*1h95g3h*_up*MQ..&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwR0PQaFlH50BXwBvWZwvNhXobfh78kks9Z6tO1uWRERW9ttkIhxZB8aAnsVEALw_wcB&gclsrc=aw.ds)
-- **Compose**: [Compose](https://developer.android.com/jetpack/androidx/releases/compose?_gl=1*m8tg1v*_up*MQ..&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwR0PQaFlH50BXwBvWZwvNhXobfh78kks9Z6tO1uWRERW9ttkIhxZB8aAnsVEALw_wcB&gclsrc=aw.ds)
-- **Fragment**: [Fragment](https://developer.android.com/jetpack/androidx/releases/fragment?_gl=1*m8tg1v*_up*MQ..&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwR0PQaFlH50BXwBvWZwvNhXobfh78kks9Z6tO1uWRERW9ttkIhxZB8aAnsVEALw_wcB&gclsrc=aw.ds)
-- **Lifecycle**: [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle?_gl=1*1fwyy68*_up*MQ..&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwR0PQaFlH50BXwBvWZwvNhXobfh78kks9Z6tO1uWRERW9ttkIhxZB8aAnsVEALw_wcB&gclsrc=aw.ds)
+7. Đến đây chúc mừng bạn đã cấu hình xong Firebase cho ứng dụng Android của bạn. Bây giờ bạn cần thêm các thư viện Firebase vào dự án Android của bạn. Bạn mở file `build.gradle` (Project) và thêm dòng code sau vào phần `dependencies`:
 
-Còn mấy cái nữa cơ nhưng luời liệt kê quá, bạn có thể vào [link](https://developer.android.com/jetpack?gad_source=1&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwR0PQaFlH50BXwBvWZwvNhXobfh78kks9Z6tO1uWRERW9ttkIhxZB8aAnsVEALw_wcB&gclsrc=aw.ds#:~:text=Read%20testimonials-,Jetpack%20libraries,-Explore%20all%20libraries) này để xem. Tôi học mót ở đây ra hết ấy mà :V.
-**Các bạn chút ý nhé Compose chính là chủ đề chính ở các bài viết tiếp của mình nhé.**
+```
+plugins {
+  // ...
 
-Một sốt UI code bằng Jetpack Compose
-![](https://miro.medium.com/v2/resize:fit:474/1*OnmTLPcraJ0kfnmRx1oSPg.gif)
-![](https://raw.githubusercontent.com/android/compose-samples/refs/heads/main/readme/screenshots/Jetsnack.png)
-![](https://raw.githubusercontent.com/android/compose-samples/refs/heads/main/readme/screenshots/Jetchat.png)
-![](https://raw.githubusercontent.com/android/compose-samples/refs/heads/main/readme/screenshots/Jetcaster.png)
-![](https://raw.githubusercontent.com/android/compose-samples/refs/heads/main/readme/screenshots/JetNews.png)
-**Kết bài**
-Bài giới thiệu của mình đến đây là kết thúc tuy có ngắn nhưng vẫn mong các bạn nắm qua một chút về **Android dẹt pạch**. Bài viết sau chúng ta sẽ đi chi tiết hơn về Jetpack Compose nhé. Làm thế nào để code UI bằng Jetpack compose, kết hợp việc code UI và lấy data từ api để hiển thị lên... Hẹn gặp các bạn ở bài viết sau nhé. 
+  // Add the dependency for the Google services Gradle plugin
+  id("com.google.gms.google-services") version "4.4.2" apply false
+
+}
+```
+Tiếp theo bạn mở file `build.gradle` (Module: app) và thêm code sau vào phần `dependencies`:
+
+```
+plugins {
+  id("com.android.application")
+
+  // Add the Google services Gradle plugin
+  id("com.google.gms.google-services")
+
+  ...
+}
+
+dependencies {
+  // Import the Firebase BoM
+  implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+
+
+  // TODO: Add the dependencies for Firebase products you want to use
+  // When using the BoM, don't specify versions in Firebase dependencies
+  implementation("com.google.firebase:firebase-analytics")
+
+
+  // Add the dependencies for any other desired Firebase products
+  // https://firebase.google.com/docs/android/setup#available-libraries
+}
+```
+
+## Tổng kết
+Vậy là bạn đã hoàn thành việc cấu hình Firebase cho ứng dụng Android Native của mình. Bây giờ bạn có thể sử dụng các dịch vụ của Firebase như Firebase Realtime Database, Firebase Authentication, Firebase Cloud Messaging, v.v. để phát triển ứng dụng của mình một cách dễ dàng và hiệu quả. Nếu bạn muốn tìm hiểu thêm về các dịch vụ của Firebase, bạn có thể tham khảo tài liệu chính thức của Firebase tại [Firebase Documentation](https://firebase.google.com/docs). Bài viết sau mình sẽ nói đi sâu vào các dịch vụ của Firebase và cách sử dụng chúng trong ứng dụng Android của bạn. Hy vọng bài viết này sẽ giúp ích cho bạn trong việc phát triển ứng dụng Android của mình. Cảm ơn bạn đã đọc bài viết này!
