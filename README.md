@@ -19,7 +19,7 @@ Chào mọi người, hôm nay nhân ngày đẹp trời mình sẽ gửi đến
 
 ![create_project_firebase](/css/images/linhnh/create_project_firebase.png "Create Project Firebase")
 
-2. Sau khi tạo tên cho dự án, bạn chấp nhận các điều khoản và tiếp tục đi đến Configure Google Analytics. Ở đây bạn chọn **Default Account For Firebase** và tiếp tục. Kết quả như hình dưới đây.
+2. Sau khi tạo tên cho dự án, bạn chấp nhận các điều khoản và tiếp tục đi đến **Configure Google Analytics**. Ở đây bạn chọn **Default Account For Firebase** và tiếp tục. Kết quả như hình dưới đây.
 
 ![home_page](/css/images/linhnh/home_page.png "Home Page")
 
