@@ -30,7 +30,7 @@ Chào mọi người, hôm nay nhân ngày đẹp trời mình sẽ gửi đến
 4. Bạn cần nhập **Package name** của ứng dụng Android của bạn. Package name này phải trùng với package name trong file `build.gradle` của ứng dụng Android tại dòng code như *namespace = "com.example.messageapp"*. Bạn có thể tìm thấy package name trong file `AndroidManifest.xml` hoặc trong file `build.gradle` (Module: app).
 
 5. Tiếp theo bạn cần nhập key SHA-1 của ứng dụng. Để lấy được key này bạn cần chạy lệnh sau:
-   `keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android`
+   ```keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android```
 
 
 **Các thư viện phổ biến**
