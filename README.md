@@ -33,8 +33,11 @@ Chào mọi người, hôm nay nhân ngày đẹp trời mình sẽ gửi đến
 ```
 keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
 ```
-   Sau đó trong terminal bạn tìm đến dòng SHA1: và copy key này vào ô SHA-1 key trong Firebase. Nếu bạn không có key này thì bạn có thể bỏ qua bước này, nhưng nếu bạn muốn sử dụng các dịch vụ như Firebase Authentication hoặc Firebase Dynamic Links thì bạn cần phải cung cấp key SHA-1.
+Sau đó trong terminal bạn tìm đến dòng SHA1: và copy key này vào ô SHA-1 key trong Firebase. Nếu bạn không có key này thì bạn có thể bỏ qua bước này và bấm **Register app** để liên kết , nhưng nếu bạn muốn sử dụng các dịch vụ như Firebase Authentication hoặc Firebase Dynamic Links thì bạn cần phải cung cấp key SHA-1.
 
+6. Sau khi đăng kí xong bạn bấm tiếp vào **Download google-services.json** để tải về file cấu hình Firebase cho ứng dụng Android của bạn. File này chứa các thông tin cần thiết để kết nối ứng dụng Android với Firebase. Bạn cần đặt **google-services.json** vào vị trí thư mục `app/` trong dự án Android của bạn như mô tả bên dưới.
+
+![download_google_service_json](/css/images/linhnh/download_google_service_json.png "Download Google Service Json")
 
 **Các thư viện phổ biến**
 Có thể các bạn đã dùng nhiều thư viện nhưng có thể chưa để ý nó nằm trong Jetpack libraries. Dưới đây là một số thư viện mà chúng ta hay dùng.
