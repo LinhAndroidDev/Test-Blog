@@ -11,11 +11,15 @@ tags:
 
 ## Lời nói đầu
 
-Chào mọi người, hôm nay nhân ngày đẹp trời mình sẽ gửi đến mọi người bài viết đầu tiên của mình trong Seri hướng dẫn cấu hình firebase trong dự án Android Native. Chắc hẳn câu hỏi của nhiều người khi phát triển ứng dụng mobile là làm thế nào để có thể tạo 1 ứng dụng mà không cần phải biết backend và cần 1 server có thể lưu trữ dữ liệu của app. Firebase là một giải pháp tuyệt vời cho vấn đề này, nó có một nguồn tài nguyên khổng lồ và cung cấp nhiều dịch vụ hữu ích cho các ứng dụng Android. Trong bài viết này, mình sẽ hướng dẫn các bạn cách cấu hình Firebase cho dự án Android Native của bạn.
+Chào mọi người, hôm nay nhân ngày đẹp trời mình sẽ gửi đến mọi người bài viết đầu tiên của mình trong Seri hướng dẫn cấu hình Firebase trong dự án Android Native. Chắc hẳn câu hỏi của nhiều người khi phát triển ứng dụng mobile là làm thế nào để có thể tạo 1 ứng dụng mà không cần phải biết backend và cần 1 server có thể lưu trữ dữ liệu của app. Firebase là một giải pháp tuyệt vời cho vấn đề này, nó có một nguồn tài nguyên khổng lồ và cung cấp nhiều dịch vụ hữu ích cho các ứng dụng Android. Trong bài viết này, mình sẽ hướng dẫn các bạn cách cấu hình Firebase cho dự án Android Native của bạn.
 
 ## Get Start
 
-Đầu tiên bạn truy cập [Firebase Console](https://firebase.google.com/) và đăng nhập bằng tài khoản Google của bạn. Sau đó, bạn click vào "Get start in console" để truy cập vào bảng điều khiển Firebase. Nơi đây chứa các dự án firebase của bạn, nếu bạn chưa có dự án nào thì bạn click vào "Create a Firebase project" để tạo 1 dự án mới
+1. Đầu tiên bạn truy cập [Firebase Console](https://firebase.google.com/) và đăng nhập bằng tài khoản Google của bạn. Sau đó, bạn click vào **Get start in console** để truy cập vào bảng điều khiển Firebase. Nơi đây chứa các dự án firebase của bạn, nếu bạn chưa có dự án nào thì bạn click vào **Create a Firebase project** để tạo 1 dự án mới, bạn cần nhập tên dự án và tiếp tục.
+
+![create_project_firebase](/css/images/linhnh/create_project_firebase.png "Create Project Firebase")
+
+2. Sau khi tạo tên cho dự án, bạn chấp nhận các điều khoản và tiếp tục đi đến Configure Google Analytics. Ở đây bạn chọn **Default Account For Firebase**
 
 
 **Các thư viện phổ biến**
